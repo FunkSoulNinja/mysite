@@ -2,25 +2,37 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Anthony's Site</title>
         <link rel="stylesheet" href="temp/styles/styles.css">
     </head>
     <body>
         <header class="site-header">
-            <h4 class="site-header__logo">Meow</h4>
+            <h4 class="site-header__logo">Anthony Falcon</h4>
         </header>
         <div class="large-hero">
-            <img class="large-hero__image" src="assets/images/anthony-face2.jpg">
+            <picture>
+                <source srcset="assets/images/anthony-face2.jpg" media="(min-width: 800px)">
+                <img srcset="assets/images/webcode.jpg" class="large-hero__image">
+            </picture>
             <div class="large-hero__text-content">
-                <h1 class="large-hero__title">Anthony Falcon</h1>
-                <h4 class="large-hero__subtitle">Anthony Falcon</h4>
+                <h1 class="large-hero__title">He is</h1>
+                <h4 class="large-hero__subtitle">The world's best programmer from the future!</h4>
+                <p>(..but he then got amnesia from time traveling which forced him to have to re-learn everything.)</p>
+                <h6>*None of this is true*</h6>
+                <p><a href="#" class="btn btn--large open-modal">Contact Me</a></p>
+
             </div>
         </div>
-        <div class="large-hero">
-            <img class="large-hero__image" src="assets/images/webcode.jpg">
-            <div class="large-hero__text-content">
-                <h1 class="large-hero__title">Anthony Falcon</h1>
+
+        <div class="modal">
+            <div class="modal__inner">
+                <h2 class="section-title section-title--blue section-title--less-margin"><span class="icon icon--mail section-title__icon"></span> Get in <strong>Touch</strong></h2>
+                <div class="wrapper wrapper--narrow">
+                    <p class="modal__description">Email me at TheAnthonyFalcon@gmail.com</p>
+                </div>
             </div>
+            <div class="modal__close">X</div>
         </div>
 
         <script src="/temp/scripts/App.js"></script>
