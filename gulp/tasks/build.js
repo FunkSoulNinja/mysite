@@ -27,7 +27,7 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function() {
             interlaced: true,
             multipass: true
         }))
-        .pipe(gulp.dest('./dist/assets/images'))
+        .pipe(gulp.dest('./docs/assets/images'))
 });
 
 gulp.task('useminTrigger', ['deleteDistFolder'], function() {
