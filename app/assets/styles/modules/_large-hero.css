@@ -1,3 +1,37 @@
-h1 {
-    color: $mainBlue;
+.large-hero {
+    position: relative;
+
+    &__image {
+        display: block;
+        border-radius: 1%;
+        width: 100%;
+    }
+
+    &__text-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: $mainBlue;
+        text-shadow: 3px 2px 2px rgba(0, 0, 0, .2);
+
+        @mixin atMedium {
+            padding-top: 60px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        color: $mainGray;
+        font-size: 2.4rem;
+        margin: 0;
+    }
+    &__subtitle {
+        font-weight: 200;
+        color: $mainGray;
+        font-size: 2.4rem;
+        margin: 0;
+    }
 }
